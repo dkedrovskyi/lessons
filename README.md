@@ -1,4 +1,7 @@
-# 1. Install ktop according to https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+# 1. Install ktop 
+
+Install ktop according to https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+
 ```bash 
 
 go install github.com/vladimirvivien/ktop@latest
@@ -28,8 +31,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 (According to https://github.com/vladimirvivien/ktop/blob/main/README.md)
 
 ```bash
-chmod 755 ./kubeplugin.sh
-sudo cp ./kubeplugin.sh /usr/local/bin/kubectl-kubeplugin
+chmod 755 kubeplugin
+sudo cp kubeplugin /usr/local/bin/kubectl-kubeplugin
 ```
 (According https://kubernetes.io/docs/tasks/extend-kubectl/kubectl-plugins/)
 ```bash
